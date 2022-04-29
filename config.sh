@@ -7,7 +7,7 @@ export DT_LINK="https://github.com/rushiranpise/android_device_motorola_chef_twr
 
 export DEVICE="chef"
 export OEM="motorola"
-export TARGET="bootimage"
+export TARGET="recoveryimage"
 
 export OUTPUT="*.img"
 

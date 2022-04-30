@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Device
-export TWRP_MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git"
-export TWRP_BRANCH="twrp-10.0-deprecated"
-export DT_LINK="https://github.com/rushiranpise/android_device_motorola_chef_twrp.git -b main"
+export TWRP_MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git"
+export TWRP_BRANCH="twrp-11"
+export DT_LINK="https://github.com/rushiranpise/android_device_motorola_chef_twrp.git -b retrofit"
 
 export DEVICE="chef"
 export OEM="motorola"
 export TARGET="recoveryimage"
 
-export OUTPUT="*.img"
+export OUTPUT="recoveryimage.img"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.

